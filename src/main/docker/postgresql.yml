@@ -1,0 +1,11 @@
+version: '2'
+services:
+  practor-postgresql:
+    image: postgres:11.3
+    # volumes:
+    #     - ~/volumes/jhipster/practor/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=practor
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
